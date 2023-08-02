@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MObiles</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="page">
+        <ul>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'clothes' %}">одежды</a></li>
+            <li><a href="{% url 'accessories' %}">Аксессуары</a></li>
+            <li><a href="{% url 'mobiles' %}">Телефоны и компьютеры</a></li>
+            <li><a href="{% url 'electronics' %}">Электроника</a></li>
+        </ul>
+    </div>
+    <h3>ONLINE SHOP</h3>
+    <h4>контакты</h4>
+    <div class="logos">
+        <p>
+            <a href="https://t.me/Zeniiixxx">
+                <img id="logo" src="{% static 'images/svg/telegram.svg' %}" alt="">
+            </a>
+            <a href="https://instagram.com/zen.iixx?igshid=MzNlNGNkZWQ4Mg==">
+                <img id="logo" src="{% static 'images/svg/instagram.svg' %}" alt="">
+            </a>
+            <a href="https://twitter.com/timur44585214?s=09">
+                <img id="logo" src="{% static 'images/svg/twitter.svg' %}" alt="">
+            </a>
+            <a href="https://discordapp.com/users/1125815105037271160/">
+                <img id="logo" src="{% static 'images/svg/discord.svg' %}" alt="">
+            </a>
+        </p>
+    </div>    
+</body>
